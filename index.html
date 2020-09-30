@@ -134,22 +134,22 @@ a:active {
 	
 	
 <p>
-	<input type="text" id="GBP" size="10" onchange="gbpfunc()"/>
+	<input type="text" id="GBP" size="10" value="0" onchange="gbpfunc()"/>
     <label for="GBP"> GBP </label>
 
     </br>
 
-    <input type="text" id="USD" size="10" onchange="usdfunc()" />
+    <input type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
     <label for="USD"> USD </label>
 
     </br>
 
-    <input type="text" id="EUR" size="10" onchange="eurfunc()" />
+    <input type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
     <label for="EUR"> EUR </label>
 
     </br>
 
-    <input type="text" id="HRK" size="10" onchange="hrkfunc()" />
+    <input type="text" id="HRK" size="10" value="0" onchange="hrkfunc()" />
     <label for="HRK"> HRK </label>
 
  
@@ -170,30 +170,30 @@ function init()
 
 function gbpfunc()
 {
-    usd.value = parseFloat(gbp.value) * 0,49;
-    eur.value = parseFloat(gbp.value) * 0,69;
-    hrk.value = parseFloat(gbp.value) * 0,12;
+    usd.value = parseFloat(gbp.value) * 0.49;
+    eur.value = parseFloat(gbp.value) * 0.69;
+    hrk.value = parseFloat(gbp.value) * 0.12;
 }
 
 function eurfunc()
 {
-    gbp.value = parseFloat(eur.value) * 1,43;
-    usd.value = parseFloat(eur.value) * 0,70;
-    hrk.value = parseFloat(eur.value) * 0,13;
+    gbp.value = parseFloat(eur.value) * 1.43;
+    usd.value = parseFloat(eur.value) * 0.70;
+    hrk.value = parseFloat(eur.value) * 0.13;
 }
 
 function hrkfunc()
 {
-    gbp.value = parseFloat(hrk.value) * 8,33;
-    usd.value = parseFloat(hrk.value) * 6,45;
-    eur.value = parseFloat(hrk.value) * 7,56;
+    gbp.value = parseFloat(hrk.value) * 8.33;
+    usd.value = parseFloat(hrk.value) * 6.45;
+    eur.value = parseFloat(hrk.value) * 7.56;
 }
 
 function usdfunc()
 {
-    gbp.value = parseFloat(usd.value) * 2,03;
-    eur.value = parseFloat(usd.value) * 1,41;
-    hrk.value = parseFloat(usd.value) * 0,16;
+    gbp.value = parseFloat(usd.value) * 2.03;
+    eur.value = parseFloat(usd.value) * 1.41;
+    hrk.value = parseFloat(usd.value) * 0.16;
 }
 
 init();
