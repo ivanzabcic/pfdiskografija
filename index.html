@@ -1,48 +1,6 @@
 <html>
 
 <head>
-
-	<script>
-		var gbp, usd, eur, hrk;
-function init()
-{
-    gbp = document.getElementById("GBP");
-    usd = document.getElementById("USD");
-    eur = document.getElementById("EUR");
-    cad = document.getElementById("HRK");
-}
-
-function gbpfunc()
-{
-    usd.value = parseFloat(gbp.value) * 0.49;
-    eur.value = parseFloat(gbp.value) * 0.69;
-    hrk.value = parseFloat(gbp.value) * 0.12;
-}
-
-function eurfunc()
-{
-    gbp.value = parseFloat(eur.value) * 1.43;
-    usd.value = parseFloat(eur.value) * 0.70;
-    hrk.value = parseFloat(eur.value) * 0.13;
-}
-
-function hrkfunc()
-{
-    gbp.value = parseFloat(cad.value) * 8,33;
-    usd.value = parseFloat(cad.value) * 6,45;
-    eur.value = parseFloat(cad.value) * 7,56;
-}
-
-function usdfunc()
-{
-    gbp.value = parseFloat(usd.value) * 2.03;
-    eur.value = parseFloat(usd.value) * 1.41;
-    hrk.value = parseFloat(usd.value) * 0.16;
-}
-
-init();
-	</script>
-	
 	
 <title>Pink floyd</title>
 <style>
@@ -199,4 +157,46 @@ a:active {
 </p>
 	
 </body>
+
+	<script>
+		var gbp, usd, eur, hrk;
+function init()
+{
+    gbp = document.getElementById("GBP");
+    usd = document.getElementById("USD");
+    eur = document.getElementById("EUR");
+    cad = document.getElementById("HRK");
+}
+
+function gbpfunc()
+{
+    usd.value = parseFloat(gbp.value) * 0.49;
+    eur.value = parseFloat(gbp.value) * 0.69;
+    hrk.value = parseFloat(gbp.value) * 0.12;
+}
+
+function eurfunc()
+{
+    gbp.value = parseFloat(eur.value) * 1.43;
+    usd.value = parseFloat(eur.value) * 0.70;
+    hrk.value = parseFloat(eur.value) * 0.13;
+}
+
+function hrkfunc()
+{
+    gbp.value = parseFloat(cad.value) * 8,33;
+    usd.value = parseFloat(cad.value) * 6,45;
+    eur.value = parseFloat(cad.value) * 7,56;
+}
+
+function usdfunc()
+{
+    gbp.value = parseFloat(usd.value) * 2.03;
+    eur.value = parseFloat(usd.value) * 1.41;
+    hrk.value = parseFloat(usd.value) * 0.16;
+}
+
+init();
+	</script>
+
 </html>
