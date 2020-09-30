@@ -3,54 +3,41 @@
 <head>
 
 	<script>
-		var gbp, usd, eur, cad, aud;
+		var gbp, usd, eur, hrk;
 function init()
 {
     gbp = document.getElementById("GBP");
     usd = document.getElementById("USD");
     eur = document.getElementById("EUR");
-    cad = document.getElementById("CAD");
-    aud = document.getElementById("AUD");
+    cad = document.getElementById("HRK");
 }
 
 function gbpfunc()
 {
-    usd.value = parseFloat(gbp.value) * 0.49246;
-    eur.value = parseFloat(gbp.value) * 0.69714;
-    cad.value = parseFloat(gbp.value) * 0.50221;
-    aud.value = parseFloat(gbp.value) * 0.43497;
+    usd.value = parseFloat(gbp.value) * 0.49;
+    eur.value = parseFloat(gbp.value) * 0.69;
+    hrk.value = parseFloat(gbp.value) * 0.12;
 }
 
 function eurfunc()
 {
-    gbp.value = parseFloat(eur.value) * 1.43448;
-    usd.value = parseFloat(eur.value) * 0.70641;
-    cad.value = parseFloat(eur.value) * 0.72037;
-    aud.value = parseFloat(eur.value) * 0.62382;
+    gbp.value = parseFloat(eur.value) * 1.43;
+    usd.value = parseFloat(eur.value) * 0.70;
+    hrk.value = parseFloat(eur.value) * 0.13;
 }
 
-function cadfunc()
+function hrkfunc()
 {
-    gbp.value = parseFloat(cad.value) * 1.99169;
-    usd.value = parseFloat(cad.value) * 0.98054;
-    eur.value = parseFloat(cad.value) * 1.38814;
-    aud.value = parseFloat(cad.value) * 0.86613;
-}
-
-function audfunc()
-{
-    gbp.value = parseFloat(aud.value) * 2.29964;
-    usd.value = parseFloat(aud.value) * 1.13262;
-    eur.value = parseFloat(aud.value) * 1.60329;
-    cad.value = parseFloat(aud.value) * 0.88297;    
+    gbp.value = parseFloat(cad.value) * 8,33;
+    usd.value = parseFloat(cad.value) * 6,45;
+    eur.value = parseFloat(cad.value) * 7,56;
 }
 
 function usdfunc()
 {
-    gbp.value = parseFloat(usd.value) * 2.03032;
-    eur.value = parseFloat(usd.value) * 1.41544;
-    cad.value = parseFloat(usd.value) * 1.01941;
-    aud.value = parseFloat(usd.value) * 0.88297;
+    gbp.value = parseFloat(usd.value) * 2.03;
+    eur.value = parseFloat(usd.value) * 1.41;
+    hrk.value = parseFloat(usd.value) * 0.16;
 }
 
 init();
@@ -204,13 +191,10 @@ a:active {
 
     </br>
 
-    <input type="text" id="CAD" size="10" value="0" onchange="cadfunc()" />
-    <label for="CAD"> CAD </label>
+    <input type="text" id="HRK" size="10" value="0" onchange="hrkfunc()" />
+    <label for="HRK"> HRK </label>
 
-    </br>
-
-    <input type="text" id="AUD" size="10" value="0" onchange="audfunc()" />
-    <label for="AUD"> AUD </label>  
+ 
 
 </p>
 	
